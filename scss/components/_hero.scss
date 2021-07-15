@@ -13,25 +13,30 @@ main {
             direction: row;
             flex-wrap: nowrap;
             align-items: flex-start;
+            justify-content: space-between;
             margin: 8rem 0;
         }
     
         .img-hero {
-            margin-left: 0 !important;
+            @media only screen and (min-width : 1024px) {
+                width: 60%;
+            }
 
             img {
                 width: 96%;
+
                 @media only screen and (min-width : 1024px) {
-                    width: 90%;
+                    width: 100%;
                 }
             }
         }
     
         .text-box-hero {
-            width: 90%;
+            width: 80%;
     
             @media only screen and (min-width : 1024px) {
                 width: 40%;
+                margin-left: 5rem;
             }
         
             h1 {

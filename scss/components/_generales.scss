@@ -11,7 +11,7 @@ html {
 
     .container {
         width: 100vw;
-        padding: 0 1.5rem;
+        padding: 0 2%;
         margin: 0;
     
         /* iPads (portrait and landscape) ----------- */
@@ -21,12 +21,14 @@ html {
     
         /* Desktops and laptops ----------- */
         @media only screen and (min-width : 1224px) {
-            padding: 0 6%;
+            padding: 0 10%;
+            margin-top: 2%;
         }
     
         /* Large screens ----------- */
         @media only screen and (min-width : 1824px) {
-            padding: 0 8%;
+            padding: 0 14%;
+            margin-top: 2%;
         }
     }
 }

@@ -9,7 +9,7 @@ html {
     font-family: "typold", sans-serif; }
   html .container {
     width: 100vw;
-    padding: 0 1.5rem;
+    padding: 0 2%;
     margin: 0;
     /* iPads (portrait and landscape) ----------- */
     /* Desktops and laptops ----------- */
@@ -19,10 +19,12 @@ html {
         padding: 0 4%; } }
     @media only screen and (min-width: 1224px) {
       html .container {
-        padding: 0 6%; } }
+        padding: 0 10%;
+        margin-top: 2%; } }
     @media only screen and (min-width: 1824px) {
       html .container {
-        padding: 0 8%; } }
+        padding: 0 14%;
+        margin-top: 2%; } }
 
 .nav {
   position: relative;
@@ -35,7 +37,7 @@ html {
   @media only screen and (min-width: 1024px) {
     .nav {
       height: 3rem;
-      width: 80vw;
+      width: 100vw;
       margin-top: 2rem; } }
   @media only screen and (min-width: 1024px) {
     .nav .nav-header {
@@ -87,7 +89,7 @@ html {
         height: 2rem;
         background-color: transparent;
         font-size: 16px;
-        top: 0;
+        top: 0.5rem;
         right: 0; } }
     .nav .nav-links a {
       position: relative;
@@ -102,10 +104,10 @@ html {
       right: 0; }
       @media only screen and (min-width: 1024px) {
         .nav .nav-links a {
-          font-size: 0.8rem;
+          font-size: 0.9rem;
           width: fit-content;
           height: auto;
-          margin: 0 0 0 2.2rem;
+          margin: 0 0 0 4.7rem;
           justify-self: flex-end;
           color: #26221E; }
           .nav .nav-links a:hover {
@@ -243,19 +245,22 @@ main .hero {
       direction: row;
       flex-wrap: nowrap;
       align-items: flex-start;
+      justify-content: space-between;
       margin: 8rem 0; } }
-  main .hero .img-hero {
-    margin-left: 0 !important; }
-    main .hero .img-hero img {
-      width: 96%; }
-      @media only screen and (min-width: 1024px) {
-        main .hero .img-hero img {
-          width: 90%; } }
+  @media only screen and (min-width: 1024px) {
+    main .hero .img-hero {
+      width: 60%; } }
+  main .hero .img-hero img {
+    width: 96%; }
+    @media only screen and (min-width: 1024px) {
+      main .hero .img-hero img {
+        width: 100%; } }
   main .hero .text-box-hero {
-    width: 90%; }
+    width: 80%; }
     @media only screen and (min-width: 1024px) {
       main .hero .text-box-hero {
-        width: 40%; } }
+        width: 40%;
+        margin-left: 5rem; } }
     main .hero .text-box-hero h1 {
       font-family: "typold", sans-serif;
       font-weight: 400;
@@ -298,3 +303,7 @@ main .hero {
       @media only screen and (min-width: 1024px) {
         main .hero .text-box-hero .btn-hero {
           margin-top: 2rem; } }
+
+.services {
+  width: 100%;
+  background-color: #26221E; }

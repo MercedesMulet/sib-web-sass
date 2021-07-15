@@ -9,7 +9,7 @@
 
     @media only screen and (min-width:1024px) {
         height: 3rem;
-        width: 80vw;
+        width: 100vw;
         margin-top: 2rem;
     }
 
@@ -79,7 +79,7 @@
             height: 2rem;
             background-color: transparent;
             font-size: $font-size;
-            top: 0;
+            top: 0.5rem;
             right: 0;
         }
 
@@ -96,10 +96,10 @@
             right: 0;
 
             @media only screen and (min-width:1024px) {
-                font-size: 0.8rem;
+                font-size: 0.9rem;
                 width: fit-content;
                 height: auto;
-                margin: 0 0 0 2.2rem;
+                margin: 0 0 0 4.7rem;
                 justify-self: flex-end;
                 color: $dark-color;
 
