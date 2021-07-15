@@ -1,0 +1,5 @@
+#Carpetas con dependencias
+node_modules/
+​
+#Carpeta con configuracions de VSCode
+.vscode/
