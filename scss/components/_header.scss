@@ -1,14 +1,15 @@
 .nav {
-    height: 3rem;
-    width: 100%;
     position: relative;
+    height: 3rem;
+    width: 100vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem 0;
+    padding-top: 1rem;
+    right: 0 !important;
 
     @media (max-width:1024px) {
-        width: 80vw;
+        width: 90%;
         padding-top: 0.5rem;
     }
 
@@ -25,16 +26,14 @@
 
         @media (max-width:1224px) {
             display: inline-block;
-            position: absolute;
-            right: 0px;
-            top: 0px;
+            position: relative;
         }
 
         label {
             
             @media (max-width:1224px) {
                 display: inline-block;
-                width: 50px;
+                width: 40px;
                 height: 50px;
                 padding-top: 1rem;
             }
@@ -65,14 +64,13 @@
             transition: all 0.2s ease-in-out;
             overflow-y: hidden;
             top: 4rem;
-            left: auto;
         } 
 
         a {
             display: inline-block;
+            font-family: $main-font;
             text-decoration: none;
             color: $dark-color;
-            padding: 0 0 0 1rem;
 
             &:hover {
                 color: $accent-color;
@@ -83,10 +81,9 @@
                 display: block;
                 width: 100%;
                 padding: 0 0 1rem 0;
-                margin-right: 2rem;
                 text-align: right;
                 color: $bground-color;
-                font-weight: 600;
+                font-weight: 400;
             }
         }
     }

@@ -1,11 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 /* Variables */
 html {
   font-size: 16px;
   box-sizing: border-box; }
   html body {
     background-color: #E6E0DA;
-    font-family: "Tpold", sans-serif;
+    font-family: "typold", sans-serif;
     width: 100vw; }
   html .container {
     width: 100vw;
@@ -25,16 +24,17 @@ html {
         padding: 0 8%; } }
 
 .nav {
-  height: 3rem;
-  width: 100%;
   position: relative;
+  height: 3rem;
+  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 0; }
+  padding-top: 1rem;
+  right: 0 !important; }
   @media (max-width: 1024px) {
     .nav {
-      width: 80vw;
+      width: 90%;
       padding-top: 0.5rem; } }
   .nav .nav-header {
     display: inline; }
@@ -45,13 +45,11 @@ html {
     @media (max-width: 1224px) {
       .nav .nav-btn {
         display: inline-block;
-        position: absolute;
-        right: 0px;
-        top: 0px; } }
+        position: relative; } }
     @media (max-width: 1224px) {
       .nav .nav-btn label {
         display: inline-block;
-        width: 50px;
+        width: 40px;
         height: 50px;
         padding-top: 1rem; } }
     @media (max-width: 1224px) {
@@ -74,13 +72,12 @@ html {
         height: 0px;
         transition: all 0.2s ease-in-out;
         overflow-y: hidden;
-        top: 4rem;
-        left: auto; } }
+        top: 4rem; } }
     .nav .nav-links a {
       display: inline-block;
+      font-family: "typold", sans-serif;
       text-decoration: none;
-      color: #26221E;
-      padding: 0 0 0 1rem; }
+      color: #26221E; }
       .nav .nav-links a:hover {
         color: #FF7900;
         font-weight: 600; }
@@ -89,10 +86,9 @@ html {
           display: block;
           width: 100%;
           padding: 0 0 1rem 0;
-          margin-right: 2rem;
           text-align: right;
           color: #E6E0DA;
-          font-weight: 600; } }
+          font-weight: 400; } }
   .nav #nav-check {
     display: none; }
     .nav #nav-check:not(:checked) ~ .nav-links {
@@ -136,7 +132,8 @@ main .hero {
         width: 50%;
         padding: 2rem; } }
     main .hero .text-box-hero h1 {
-      font-family: "Tpold", sans-serif;
+      font-family: "typold", sans-serif;
+      font-weight: 400;
       font-size: 44.8px;
       line-height: 2.8rem;
       width: 70%;
@@ -148,6 +145,8 @@ main .hero {
           line-height: 5rem;
           margin: 0 0 1rem 0; } }
     main .hero .text-box-hero p {
+      font-family: "typold", sans-serif;
+      font-weight: 300;
       width: 80%;
       color: #26221E;
       line-height: 1.5rem; }
@@ -157,15 +156,16 @@ main .hero {
           color: #26221E;
           line-height: 1.5rem; } }
     main .hero .text-box-hero .btn-hero {
+      font-family: "typold", sans-serif;
+      font-weight: 600;
       width: auto;
       height: auto;
       color: #E6E0DA;
       background: #FF7900;
       text-transform: uppercase;
       font-size: 16px;
-      font-weight: 600;
       letter-spacing: 0.05rem;
       padding: 0.8rem 1.5rem;
       margin-top: 0.5rem;
       border: none;
-      box-shadow: 0px 2px 10px #c76f2279; }
+      box-shadow: 0px 2px 10px #77512f5b; }
