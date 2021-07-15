@@ -23,6 +23,16 @@
                 display: inline-block;
                 width: 50%;
             }
+
+            img {
+                width: 5rem;
+                height: auto;
+
+                @media only screen and (min-width:1024px) {
+                    width: 6rem;
+                    height: auto;
+                }
+            }
         }
     }
 
@@ -86,9 +96,10 @@
             right: 0;
 
             @media only screen and (min-width:1024px) {
+                font-size: 0.8rem;
                 width: fit-content;
                 height: auto;
-                margin: 0 0 0 2rem;
+                margin: 0 0 0 2.2rem;
                 justify-self: flex-end;
                 color: $dark-color;
 
