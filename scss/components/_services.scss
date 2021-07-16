@@ -1,4 +1,55 @@
 .services {
-    width: 100%;
+    position: relative;
+    width: 100vw;
+    height: 105vh;
     background-color: $dark-color;
+    clip-path: polygon(0 14vw, 100% 0, 100% 100%, 0 100%);
+    margin-top: -2rem !important;
+    display: flex;
+    direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+
+    @media only screen and (min-width : 1024px) {
+        margin-top: -5rem !important;
+    }
+
+
+    .list-services {
+        position: relative;
+        list-style: none;
+        top: 1.5rem;
+
+        hr.solid {
+            border-top: 1px solid $bground-color;
+            width: 80vw;
+          }
+
+        li {
+            margin-top: 1.5rem;
+            margin-bottom: 0.8rem;
+
+            a {
+                text-decoration: none;
+                color: $bground-color;
+                font-size: $font-size * 2;
+                font-family: $light-font;
+                align-self: center;
+
+                &::before {
+                    content: '';
+                    border-left: 4px solid transparent;
+                    border-right: 4px solid transparent;
+                    border-top: 5px solid;
+                    position: inline;
+                    margin-right: 1rem;
+                    vertical-align: middle;
+                    vertical-align: calc(-50% - 4px);
+                }
+            }
+        }
+
+
+    }
 }

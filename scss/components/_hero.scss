@@ -14,8 +14,8 @@ main {
             flex-wrap: nowrap;
             align-items: flex-start;
             justify-content: space-between;
-            margin-top: 11rem;
-            margin-bottom: 5rem;
+            margin-top: 14rem;
+            margin-bottom: 0;
         }
     
         .img-hero {
@@ -42,7 +42,6 @@ main {
         
             h1 {
                 font-family: $main-font;
-                font-weight: 400;
                 font-size: $font-size * 2.8;
                 line-height: 2.8rem;
                 width: 70%;
@@ -51,15 +50,14 @@ main {
     
                 @media only screen and (min-width : 1024px) {
                     font-size: $font-size * 4.2;
-                    line-height: 5rem;
+                    line-height: 4.2rem;
                     margin: 0 0 1rem 0;
                 }
             }
     
             p {
                 font-family: $main-font;
-                font-weight: 300;
-                width: 80%;
+                width: 96vw;
                 color: $dark-color;
                 line-height: 1.5rem;
     
@@ -72,17 +70,17 @@ main {
             }
     
             .btn-hero {
-                font-family: $main-font;
-                font-weight: 600;
+                font-family: $bold-font;
                 width: auto;
                 height: auto;
                 color: $bground-color;
                 background: $accent-color;
                 text-transform: uppercase;
                 font-size: $font-size;
-                letter-spacing: 0.05rem;
+                letter-spacing: 0.08rem;
                 padding: 0.8rem 1.5rem;
                 margin-top: 0.5rem;
+                margin-bottom: 1rem;
                 border: none;
                 box-shadow: 0px 2px 10px $shadow-color;
 
