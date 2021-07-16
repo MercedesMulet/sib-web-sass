@@ -14,5 +14,13 @@
     "nodemon": "^2.0.12"
   },
   "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MercedesMulet/sib-web-sass.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MercedesMulet/sib-web-sass/issues"
+  },
+  "homepage": "https://github.com/MercedesMulet/sib-web-sass#readme",
   "description": ""
 }

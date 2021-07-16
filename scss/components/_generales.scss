@@ -1,7 +1,6 @@
 html {
     font-size: $font-size;
     box-sizing: border-box;
-    width: 100vw;
     margin: 0 !important;
 
     body {
@@ -10,7 +9,7 @@ html {
     }
 
     .container {
-        width: 100vw;
+        width: 100%;
         padding: 0 2%;
         margin: 0;
     
@@ -21,13 +20,13 @@ html {
     
         /* Desktops and laptops ----------- */
         @media only screen and (min-width : 1224px) {
-            padding: 0 10%;
+            padding: 0 6%;
             margin-top: 2%;
         }
     
         /* Large screens ----------- */
         @media only screen and (min-width : 1824px) {
-            padding: 0 14%;
+            padding: 0 8%;
             margin-top: 2%;
         }
     }
