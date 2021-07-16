@@ -25,7 +25,8 @@ html {
   margin: 0 !important; }
   html body {
     background-color: #E6E0DA;
-    font-family: "TypoldReg", sans-serif; }
+    font-family: "TypoldReg", sans-serif;
+    margin: 0; }
   html .container {
     width: 100%;
     padding: 0 2%;
@@ -69,7 +70,8 @@ html {
       width: 50%; } }
   .nav .nav-header .nav-logo img {
     width: 5rem;
-    height: auto; }
+    height: auto;
+    margin-left: 1rem; }
     @media only screen and (min-width: 1024px) {
       .nav .nav-header .nav-logo img {
         width: 6rem;
@@ -276,26 +278,28 @@ main .hero {
       main .hero .img-hero img {
         width: 100%; } }
   main .hero .text-box-hero {
-    width: 80%; }
+    width: 80%;
+    margin-left: 1rem; }
     @media only screen and (min-width: 1024px) {
       main .hero .text-box-hero {
         width: 50%;
-        margin-left: 5rem; } }
+        margin-left: 8rem; } }
     main .hero .text-box-hero h1 {
       font-family: "TypoldReg", sans-serif;
       font-size: 44.8px;
       line-height: 2.8rem;
-      width: 70%;
+      width: 90%;
       margin: 2rem 0 1rem 0;
       color: #26221E; }
       @media only screen and (min-width: 1024px) {
         main .hero .text-box-hero h1 {
           font-size: 67.2px;
           line-height: 4.2rem;
-          margin: 0 0 1rem 0; } }
+          margin: 0 0 1rem 0;
+          width: 70%; } }
     main .hero .text-box-hero p {
       font-family: "TypoldReg", sans-serif;
-      width: 96vw;
+      width: 90vw;
       color: #26221E;
       line-height: 1.5rem; }
       @media only screen and (min-width: 1024px) {
@@ -333,17 +337,19 @@ main .hero {
   direction: column;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: flex-start; }
+  justify-content: flex-start;
+  padding: 1rem 0; }
   @media only screen and (min-width: 1024px) {
     .services {
       margin-top: -5rem !important; } }
   .services .list-services {
     position: relative;
     list-style: none;
-    top: 1.5rem; }
+    top: 1.5rem;
+    padding-inline-start: 1rem !important; }
     .services .list-services hr.solid {
       border-top: 1px solid #E6E0DA;
-      width: 80vw; }
+      width: 90vw; }
     .services .list-services li {
       margin-top: 1.5rem;
       margin-bottom: 0.8rem; }

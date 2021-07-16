@@ -10,6 +10,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: flex-start;
+    padding: 1rem 0;
 
     @media only screen and (min-width : 1024px) {
         margin-top: -5rem !important;
@@ -20,10 +21,11 @@
         position: relative;
         list-style: none;
         top: 1.5rem;
+        padding-inline-start: 1rem !important;
 
         hr.solid {
             border-top: 1px solid $bground-color;
-            width: 80vw;
+            width: 100vw - 10vw;
           }
 
         li {

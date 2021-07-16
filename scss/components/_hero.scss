@@ -34,17 +34,18 @@ main {
     
         .text-box-hero {
             width: 80%;
+            margin-left: 1rem;
     
             @media only screen and (min-width : 1024px) {
                 width: 50%;
-                margin-left: 5rem;
+                margin-left: 8rem;
             }
         
             h1 {
                 font-family: $main-font;
                 font-size: $font-size * 2.8;
                 line-height: 2.8rem;
-                width: 70%;
+                width: 90%;
                 margin: 2rem 0 1rem 0;
                 color: $dark-color;
     
@@ -52,12 +53,13 @@ main {
                     font-size: $font-size * 4.2;
                     line-height: 4.2rem;
                     margin: 0 0 1rem 0;
+                    width: 70%;
                 }
             }
     
             p {
                 font-family: $main-font;
-                width: 96vw;
+                width: 90vw;
                 color: $dark-color;
                 line-height: 1.5rem;
     
