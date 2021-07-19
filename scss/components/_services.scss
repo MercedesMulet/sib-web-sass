@@ -3,8 +3,7 @@
     width: 100vw;
     height: 105vh;
     background-color: $dark-color;
-    clip-path: polygon(0 14vw, 100% 0, 100% 100%, 0 100%);
-    margin-top: -2rem !important;
+    clip-path: polygon(0 5.5vw, 100% 0, 100% 100%, 0 100%);
     display: flex;
     direction: column;
     flex-wrap: wrap;
@@ -13,13 +12,14 @@
     padding: 1rem 0 2rem 0;
 
     h2 {
+        display: none;
         visibility: hidden;
     }
 
     @media only screen and (min-width : 1024px) {
-        margin-top: -8rem !important;
+        margin-top: -9rem !important;
         justify-content: center;
-        height: 100vh;
+        height: 80vh;
     }
 
     .list-services {
@@ -32,11 +32,11 @@
         hr.solid {
             border-top: 1px solid $bground-color;
             width: 100vw - 10vw;
-          }
+        }
 
-          .divider {
-              visibility: hidden;
-          }
+        .divider {
+            visibility: hidden;
+        }
 
         li {
             margin-top: 1.5rem;
@@ -45,7 +45,7 @@
             a {
                 text-decoration: none;
                 color: $bground-color;
-                font-size: $font-size * 2;
+                font-size: $font-size * 1.5;
                 font-family: $light-font;
 
                 &::before {
@@ -71,17 +71,18 @@
             padding-inline-start: 0 !important;
             align-items: center;
             justify-content: center;
+            top: -1rem;
 
             .solid {
                 display: none;
             }
 
-            .divider {
+            .divider-services {
                 visibility: visible;
                 position: absolute;
                 top: 10vh;
                 border-top: 1px solid $bground-color;
-                width: 5vw;
+                width: 3rem;
                 align-self: center;
             }
 
@@ -103,19 +104,23 @@
 
             li {
                 margin: 0 !important;
-                
 
                 a {
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    width: 1fr;
                     border: 1px solid $bground-color;
                     padding: 1rem 1rem 1.5rem 1rem;
                     margin: 0 !important;
+                    cursor: pointer;
 
                     &::before {
                         display: none;
+                    }
+
+                    &:hover {
+                        color: $accent-color;
+                        border: 1px solid $accent-color;
                     }
                 }
             }

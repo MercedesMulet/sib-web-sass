@@ -31,12 +31,15 @@ html {
     height: 100%; }
     html body .chat {
       position: fixed;
-      top: 82%;
-      right: 3%;
-      z-index: 2; }
+      top: 84%;
+      right: 4%;
+      z-index: 2;
+      transition: all .2s ease-in-out; }
+      html body .chat:hover {
+        transform: scale(1.1); }
       html body .chat img {
-        width: 5rem;
-        height: 5rem; }
+        width: 4rem;
+        height: 4rem; }
   html .container {
     width: 100%;
     padding: 0 2%;
@@ -68,7 +71,7 @@ html {
       position: absolute;
       width: 89vw;
       top: 0;
-      margin-top: 1.5rem;
+      margin-top: 1rem;
       padding: 0 7rem; } }
   @media only screen and (min-width: 1024px) {
     .nav .nav-header {
@@ -110,8 +113,7 @@ html {
     height: 0px;
     transition: all 0.2s ease-in-out;
     overflow-y: hidden;
-    top: 4rem;
-    text-transform: uppercase; }
+    top: 4rem; }
     @media only screen and (min-width: 1024px) {
       .nav .nav-links {
         width: auto;
@@ -121,7 +123,7 @@ html {
         height: auto;
         background-color: transparent;
         font-size: 16px;
-        top: 0.5rem;
+        top: 0;
         right: 0; } }
     .nav .nav-links a {
       position: relative;
@@ -134,18 +136,36 @@ html {
       font-weight: 400;
       text-decoration: none;
       top: 1rem;
-      right: 3rem;
+      right: 2rem;
       color: #E6E0DA; }
       @media only screen and (min-width: 1024px) {
         .nav .nav-links a {
           font-size: 0.9rem;
           width: fit-content;
-          margin: 0 0 0 4.5rem;
+          margin: 0 0 0 3.5rem;
           justify-self: flex-end;
           color: #26221E; }
           .nav .nav-links a:hover {
             color: #FF7900;
             font-weight: 600; } }
+    .nav .nav-links .btn-header {
+      font-family: "TypoldReg", sans-serif;
+      width: auto;
+      height: auto;
+      color: #E6E0DA;
+      background: #FF7900;
+      font-size: .9rem;
+      padding: 0.5rem 1rem 0.7rem;
+      margin-top: 0.5rem;
+      margin-bottom: 1rem;
+      border: none;
+      cursor: pointer;
+      margin-left: 1.5rem; }
+      .nav .nav-links .btn-header:hover {
+        background-color: #df7213; }
+      @media only screen and (min-width: 1024px) {
+        .nav .nav-links .btn-header {
+          margin-top: 1rem; } }
 
 #nav-check {
   display: none; }
@@ -279,11 +299,11 @@ main .hero {
       flex-wrap: nowrap;
       align-items: flex-start;
       justify-content: space-between;
-      margin-top: 14rem;
+      margin-top: 10rem;
       margin-bottom: 0; } }
   @media only screen and (min-width: 1024px) {
     main .hero .img-hero {
-      width: 60%; } }
+      width: 50%; } }
   main .hero .img-hero img {
     width: 100%; }
     @media only screen and (min-width: 1024px) {
@@ -291,24 +311,43 @@ main .hero {
         width: 100%; } }
   main .hero .text-box-hero {
     width: 80%;
-    margin-left: 1rem; }
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; }
     @media only screen and (min-width: 1024px) {
       main .hero .text-box-hero {
         width: 50%;
-        margin-left: 8rem; } }
+        margin-left: 6rem;
+        margin-top: 6rem; } }
+    main .hero .text-box-hero .pretitle-hero {
+      font-size: 0.8rem;
+      font-family: "TypoldLt", sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.5rem;
+      margin-bottom: 0.5rem; }
     main .hero .text-box-hero h1 {
       font-family: "TypoldReg", sans-serif;
       font-size: 44.8px;
       line-height: 2.8rem;
       width: 90%;
-      margin: 2rem 0 1rem 0;
+      margin: 2rem 0 2rem 0;
       color: #26221E; }
       @media only screen and (min-width: 1024px) {
         main .hero .text-box-hero h1 {
-          font-size: 67.2px;
-          line-height: 4.2rem;
-          margin: 0 0 1rem 0;
+          font-size: 64px;
+          line-height: 4.4rem;
+          margin: 0 0 1.5rem -.2rem;
           width: 70%; } }
+    main .hero .text-box-hero .divider-hero {
+      visibility: hidden; }
+      @media only screen and (min-width: 1024px) {
+        main .hero .text-box-hero .divider-hero {
+          visibility: visible;
+          border: #26221E 1px solid;
+          background-color: #26221E;
+          width: 3rem;
+          margin: 0; } }
     main .hero .text-box-hero p {
       font-family: "TypoldReg", sans-serif;
       width: 90vw;
@@ -316,24 +355,25 @@ main .hero {
       line-height: 1.5rem; }
       @media only screen and (min-width: 1024px) {
         main .hero .text-box-hero p {
-          margin: 0;
-          width: 60%;
+          margin: 1.5rem 0 0;
+          width: 70%;
           color: #26221E;
           line-height: 1.5rem; } }
     main .hero .text-box-hero .btn-hero {
-      font-family: "TypoldBd", sans-serif;
+      font-family: "TypoldReg", sans-serif;
       width: auto;
       height: auto;
       color: #E6E0DA;
       background: #FF7900;
-      text-transform: uppercase;
       font-size: 16px;
-      letter-spacing: 0.08rem;
-      padding: 0.8rem 1.5rem;
+      padding: 0.6rem 1.2rem 0.8rem;
       margin-top: 0.5rem;
       margin-bottom: 1rem;
       border: none;
-      box-shadow: 0px 2px 10px #77512f5b; }
+      box-shadow: 0px 2px 10px #77512f5b;
+      cursor: pointer; }
+      main .hero .text-box-hero .btn-hero:hover {
+        background-color: #df7213; }
       @media only screen and (min-width: 1024px) {
         main .hero .text-box-hero .btn-hero {
           margin-top: 2rem; } }
@@ -343,8 +383,7 @@ main .hero {
   width: 100vw;
   height: 105vh;
   background-color: #26221E;
-  clip-path: polygon(0 14vw, 100% 0, 100% 100%, 0 100%);
-  margin-top: -2rem !important;
+  clip-path: polygon(0 5.5vw, 100% 0, 100% 100%, 0 100%);
   display: flex;
   direction: column;
   flex-wrap: wrap;
@@ -352,12 +391,13 @@ main .hero {
   justify-content: flex-start;
   padding: 1rem 0 2rem 0; }
   .services h2 {
+    display: none;
     visibility: hidden; }
   @media only screen and (min-width: 1024px) {
     .services {
-      margin-top: -8rem !important;
+      margin-top: -9rem !important;
       justify-content: center;
-      height: 100vh; } }
+      height: 80vh; } }
   .services .list-services {
     width: 100%;
     position: relative;
@@ -375,7 +415,7 @@ main .hero {
       .services .list-services li a {
         text-decoration: none;
         color: #E6E0DA;
-        font-size: 32px;
+        font-size: 24px;
         font-family: "TypoldLt", sans-serif; }
         .services .list-services li a::before {
           content: '';
@@ -396,15 +436,16 @@ main .hero {
         grid-template-rows: repeat(3, auto);
         padding-inline-start: 0 !important;
         align-items: center;
-        justify-content: center; }
+        justify-content: center;
+        top: -1rem; }
         .services .list-services .solid {
           display: none; }
-        .services .list-services .divider {
+        .services .list-services .divider-services {
           visibility: visible;
           position: absolute;
           top: 10vh;
           border-top: 1px solid #E6E0DA;
-          width: 5vw;
+          width: 3rem;
           align-self: center; }
         .services .list-services h2 {
           display: flex;
@@ -426,9 +467,12 @@ main .hero {
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 1fr;
             border: 1px solid #E6E0DA;
             padding: 1rem 1rem 1.5rem 1rem;
-            margin: 0 !important; }
+            margin: 0 !important;
+            cursor: pointer; }
             .services .list-services li a::before {
-              display: none; } }
+              display: none; }
+            .services .list-services li a:hover {
+              color: #FF7900;
+              border: 1px solid #FF7900; } }

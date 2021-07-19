@@ -12,13 +12,18 @@ html {
 
         .chat {
             position: fixed;
-            top: 82%;
-            right: 3%;
+            top: 84%;
+            right: 4%;
             z-index: 2;
+            transition: all .2s ease-in-out;
+
+            &:hover {
+                transform: scale(1.1);
+            }
             
             img {
-                width: 5rem;
-                height: 5rem;
+                width: 4rem;
+                height: 4rem;
             }
         }
     }
