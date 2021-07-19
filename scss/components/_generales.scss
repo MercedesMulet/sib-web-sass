@@ -9,24 +9,36 @@ html {
         margin: 0;
         overflow: auto;
         height: 100%;
+
+        .chat {
+            position: fixed;
+            top: 82%;
+            right: 3%;
+            z-index: 2;
+            
+            img {
+                width: 5rem;
+                height: 5rem;
+            }
+        }
     }
 
     .container {
         width: 100%;
         padding: 0 2%;
         margin: 0;
-    
+
         /* iPads (portrait and landscape) ----------- */
         @media only screen and (min-width : 768px) {
             padding: 0 4%;
         }
-    
+
         /* Desktops and laptops ----------- */
         @media only screen and (min-width : 1224px) {
             padding: 0 6%;
             margin-top: 2%;
         }
-    
+
         /* Large screens ----------- */
         @media only screen and (min-width : 1824px) {
             padding: 0 8%;

@@ -12,12 +12,18 @@
     justify-content: flex-start;
     padding: 1rem 0 2rem 0;
 
-    @media only screen and (min-width : 1024px) {
-        margin-top: -5rem !important;
+    h2 {
+        visibility: hidden;
     }
 
+    @media only screen and (min-width : 1024px) {
+        margin-top: -8rem !important;
+        justify-content: center;
+        height: 100vh;
+    }
 
     .list-services {
+        width: 100%;
         position: relative;
         list-style: none;
         top: 1.5rem;
@@ -26,6 +32,10 @@
         hr.solid {
             border-top: 1px solid $bground-color;
             width: 100vw - 10vw;
+          }
+
+          .divider {
+              visibility: hidden;
           }
 
         li {
@@ -37,7 +47,6 @@
                 color: $bground-color;
                 font-size: $font-size * 2;
                 font-family: $light-font;
-                align-self: center;
 
                 &::before {
                     content: '';
@@ -48,6 +57,66 @@
                     margin-right: 1rem;
                     vertical-align: middle;
                     vertical-align: calc(-50% - 4px);
+                }
+            }
+        }
+
+        @media only screen and (min-width : 1024px) {
+            margin-top: 4rem;
+            width: 80vw;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 3rem;
+            grid-template-rows: repeat(3, auto);
+            padding-inline-start: 0 !important;
+            align-items: center;
+            justify-content: center;
+
+            .solid {
+                display: none;
+            }
+
+            .divider {
+                visibility: visible;
+                position: absolute;
+                top: 10vh;
+                border-top: 1px solid $bground-color;
+                width: 5vw;
+                align-self: center;
+            }
+
+            h2 {
+                display: flex;
+                align-items: flex-start;
+                justify-content: flex-start;
+                visibility: visible;
+                color: $bground-color;
+                grid-column: 1 / 4;
+                font-family: $light-font;
+                font-size: 1.5rem;
+                line-height: 1.5rem;
+                width: inherit;
+                margin: 2rem 0 3rem !important;
+                text-transform: uppercase;
+                letter-spacing: 1rem;
+            }
+
+            li {
+                margin: 0 !important;
+                
+
+                a {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 1fr;
+                    border: 1px solid $bground-color;
+                    padding: 1rem 1rem 1.5rem 1rem;
+                    margin: 0 !important;
+
+                    &::before {
+                        display: none;
+                    }
                 }
             }
         }

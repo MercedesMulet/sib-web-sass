@@ -29,6 +29,14 @@ html {
     margin: 0;
     overflow: auto;
     height: 100%; }
+    html body .chat {
+      position: fixed;
+      top: 82%;
+      right: 3%;
+      z-index: 2; }
+      html body .chat img {
+        width: 5rem;
+        height: 5rem; }
   html .container {
     width: 100%;
     padding: 0 2%;
@@ -341,10 +349,15 @@ main .hero {
   align-items: center;
   justify-content: flex-start;
   padding: 1rem 0 2rem 0; }
+  .services h2 {
+    visibility: hidden; }
   @media only screen and (min-width: 1024px) {
     .services {
-      margin-top: -5rem !important; } }
+      margin-top: -8rem !important;
+      justify-content: center;
+      height: 100vh; } }
   .services .list-services {
+    width: 100%;
     position: relative;
     list-style: none;
     top: 1.5rem;
@@ -352,6 +365,8 @@ main .hero {
     .services .list-services hr.solid {
       border-top: 1px solid #E6E0DA;
       width: 90vw; }
+    .services .list-services .divider {
+      visibility: hidden; }
     .services .list-services li {
       margin-top: 1.5rem;
       margin-bottom: 0.8rem; }
@@ -359,8 +374,7 @@ main .hero {
         text-decoration: none;
         color: #E6E0DA;
         font-size: 32px;
-        font-family: "TypoldLt", sans-serif;
-        align-self: center; }
+        font-family: "TypoldLt", sans-serif; }
         .services .list-services li a::before {
           content: '';
           border-left: 4px solid transparent;
@@ -370,3 +384,49 @@ main .hero {
           margin-right: 1rem;
           vertical-align: middle;
           vertical-align: calc(-50% - 4px); }
+    @media only screen and (min-width: 1024px) {
+      .services .list-services {
+        margin-top: 4rem;
+        width: 80vw;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 3rem;
+        grid-template-rows: repeat(3, auto);
+        padding-inline-start: 0 !important;
+        align-items: center;
+        justify-content: center; }
+        .services .list-services .solid {
+          display: none; }
+        .services .list-services .divider {
+          visibility: visible;
+          position: absolute;
+          top: 10vh;
+          border-top: 1px solid #E6E0DA;
+          width: 5vw;
+          align-self: center; }
+        .services .list-services h2 {
+          display: flex;
+          align-items: flex-start;
+          justify-content: flex-start;
+          visibility: visible;
+          color: #E6E0DA;
+          grid-column: 1 / 4;
+          font-family: "TypoldLt", sans-serif;
+          font-size: 1.5rem;
+          line-height: 1.5rem;
+          width: inherit;
+          margin: 2rem 0 3rem !important;
+          text-transform: uppercase;
+          letter-spacing: 1rem; }
+        .services .list-services li {
+          margin: 0 !important; }
+          .services .list-services li a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 1fr;
+            border: 1px solid #E6E0DA;
+            padding: 1rem 1rem 1.5rem 1rem;
+            margin: 0 !important; }
+            .services .list-services li a::before {
+              display: none; } }
