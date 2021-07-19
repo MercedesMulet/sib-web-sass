@@ -120,18 +120,22 @@
             background: $accent-color;
             font-size: .9rem;
             padding: 0.5rem 1rem 0.7rem;
-            margin-top: 0.5rem;
+            margin-top: 0.8rem;
             margin-bottom: 1rem;
+            margin-right: 1.8rem;
             border: none;
             cursor: pointer;
-            margin-left: 1.5rem;
+            float: right;
 
             &:hover {
                 background-color: $accent-color-hover;
             }
 
             @media only screen and (min-width : 1024px) {
+                padding: 0.5rem 1rem 0.7rem;
                 margin-top: 1rem;
+                margin-left: 1.5rem;
+                margin-bottom: 1rem;
             }
         }
     }
