@@ -1,17 +1,13 @@
 .nav {
-    position: relative;
-    width: 93vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    right: 0;
+    padding-right: 1rem;
 
     @media only screen and (min-width:1024px) {
-        position: absolute;
-        width: 89vw;
         top: 0;
         margin-top: 1rem;
-        padding: 0 7rem;
+        padding: 0 8rem;
     }
 
     .nav-header {
@@ -81,7 +77,6 @@
             background-color: transparent;
             font-size: $font-size;
             top: 0;
-            right: 0;
         }
 
         a {

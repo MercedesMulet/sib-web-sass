@@ -3,16 +3,14 @@ main {
         display: flex;
         direction: column;
         flex-wrap: wrap-reverse;
-        margin: -0.5rem 0;
     
         @media only screen and (min-width : 1024px) {
-            width: 100vw;
             display: flex;
             direction: row;
             flex-wrap: nowrap;
             align-items: flex-start;
             justify-content: space-between;
-            margin-top: 10rem;
+            margin-top: 4rem;
             margin-bottom: 0;
         }
     

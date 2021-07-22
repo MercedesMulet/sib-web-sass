@@ -1,21 +1,25 @@
 html {
-    font-size: $font-size;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    margin: 0 !important;
+    user-select: none;
 
     body {
         background-color: $bground-color;
         font-family: $main-font;
+        min-height: 100vh;
         margin: 0;
-        overflow: auto;
-        height: 100%;
 
         .chat {
             position: fixed;
-            top: 84%;
+            top: 88%;
             right: 4%;
             z-index: 2;
             transition: all .2s ease-in-out;
+
+            @media only screen and (min-width : 1024px) {
+                top: 84%;
+            }
 
             &:hover {
                 transform: scale(1.1);
@@ -25,29 +29,6 @@ html {
                 width: 4rem;
                 height: 4rem;
             }
-        }
-    }
-
-    .container {
-        width: 100%;
-        padding: 0 2%;
-        margin: 0;
-
-        /* iPads (portrait and landscape) ----------- */
-        @media only screen and (min-width : 768px) {
-            padding: 0 4%;
-        }
-
-        /* Desktops and laptops ----------- */
-        @media only screen and (min-width : 1224px) {
-            padding: 0 6%;
-            margin-top: 2%;
-        }
-
-        /* Large screens ----------- */
-        @media only screen and (min-width : 1824px) {
-            padding: 0 8%;
-            margin-top: 2%;
         }
     }
 }

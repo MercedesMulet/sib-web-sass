@@ -20,59 +20,40 @@
 
 /* Variables */
 html {
-  font-size: 16px;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  margin: 0 !important; }
+  user-select: none; }
   html body {
     background-color: #E6E0DA;
     font-family: "TypoldReg", sans-serif;
-    margin: 0;
-    overflow: auto;
-    height: 100%; }
+    min-height: 100vh;
+    margin: 0; }
     html body .chat {
       position: fixed;
-      top: 84%;
+      top: 88%;
       right: 4%;
       z-index: 2;
       transition: all .2s ease-in-out; }
+      @media only screen and (min-width: 1024px) {
+        html body .chat {
+          top: 84%; } }
       html body .chat:hover {
         transform: scale(1.1); }
       html body .chat img {
         width: 4rem;
         height: 4rem; }
-  html .container {
-    width: 100%;
-    padding: 0 2%;
-    margin: 0;
-    /* iPads (portrait and landscape) ----------- */
-    /* Desktops and laptops ----------- */
-    /* Large screens ----------- */ }
-    @media only screen and (min-width: 768px) {
-      html .container {
-        padding: 0 4%; } }
-    @media only screen and (min-width: 1224px) {
-      html .container {
-        padding: 0 6%;
-        margin-top: 2%; } }
-    @media only screen and (min-width: 1824px) {
-      html .container {
-        padding: 0 8%;
-        margin-top: 2%; } }
 
 .nav {
-  position: relative;
-  width: 93vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  right: 0; }
+  padding-right: 1rem; }
   @media only screen and (min-width: 1024px) {
     .nav {
-      position: absolute;
-      width: 89vw;
       top: 0;
       margin-top: 1rem;
-      padding: 0 7rem; } }
+      padding: 0 8rem; } }
   @media only screen and (min-width: 1024px) {
     .nav .nav-header {
       display: inline;
@@ -123,8 +104,7 @@ html {
         height: auto;
         background-color: transparent;
         font-size: 16px;
-        top: 0;
-        right: 0; } }
+        top: 0; } }
     .nav .nav-links a {
       position: relative;
       display: block;
@@ -292,17 +272,15 @@ html {
 main .hero {
   display: flex;
   direction: column;
-  flex-wrap: wrap-reverse;
-  margin: -0.5rem 0; }
+  flex-wrap: wrap-reverse; }
   @media only screen and (min-width: 1024px) {
     main .hero {
-      width: 100vw;
       display: flex;
       direction: row;
       flex-wrap: nowrap;
       align-items: flex-start;
       justify-content: space-between;
-      margin-top: 10rem;
+      margin-top: 4rem;
       margin-bottom: 0; } }
   @media only screen and (min-width: 1024px) {
     main .hero .img-hero {
